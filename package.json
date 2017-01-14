@@ -1,0 +1,23 @@
+{
+  "name": "@wouterflorijn/cornerstone",
+  "version": "1.0.0",
+  "description": "Standalone SASS helpers mostly designed to work with ZURB Foundation and Material Design.",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WouterFlorijn/cornerstone.git"
+  },
+  "keywords": [
+    "zurb",
+    "foundation"
+  ],
+  "author": "Wouter Florijn (http://wouterflorijn.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WouterFlorijn/cornerstone/issues"
+  },
+  "homepage": "https://github.com/WouterFlorijn/cornerstone#readme"
+}
