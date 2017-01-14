@@ -1,0 +1,8 @@
+$global-radius: 0 !default;
+
+.radius {
+	border-radius: $global-radius;
+}
+.round {
+	border-radius: 100%;
+}

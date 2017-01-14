@@ -1,0 +1,20 @@
+// Spacing.
+$space: (
+	tiny:   8px,
+	small:  16px,
+	medium: 32px,
+	large:  64px,
+	huge:   128px
+	) !default;
+
+@function space($size) {
+	@return map-get($space, $size);
+}
+
+// Math.
+$pi: 3.14159265359;
+
+// Transitions.
+$transition-time:         0.5s !default;
+$transition-function:     ease-out !default;
+$transition-function-pop: cubic-bezier(0.5, 2, 0.5, 1) !default;

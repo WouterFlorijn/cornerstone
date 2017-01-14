@@ -1,0 +1,11 @@
+$foundation-palette: () !default;
+$palette:            $foundation-palette !default;
+
+@each $name, $color in $palette {
+	.color-#{$name} {
+		color: $color;
+	}
+	.bg-#{$name} {
+		background-color: $color;
+	}
+}

@@ -1,0 +1,12 @@
+@import 'material-colors';
+@import 'flat-colors';
+@import 'brand-colors';
+
+$color-map: () !default;
+
+@function color($family, $color, $shade: 500) {
+	$map:    map-get($color-map, $family);
+	$group:  map-get($map, $color);
+	$result: map-get($group, $shade);
+	@return $result;
+}

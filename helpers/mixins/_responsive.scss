@@ -1,0 +1,17 @@
+@mixin responsive-property($property, $val-small: null, $val-medium: null, $val-large: null, $val-xlarge: null, $val-xxlarge: null) {
+	@include breakpoint(small up) {
+		#{$property}: $val-small;
+	}
+	@include breakpoint(medium up) {
+		#{$property}: $val-medium;
+	}
+	@include breakpoint(large up) {
+		#{$property}: $val-large;
+	}
+	@include breakpoint(xlarge up) {
+		#{$property}: $val-xlarge;
+	}
+	@include breakpoint(xxlarge up) {
+		#{$property}: $val-xxlarge;
+	}
+}
