@@ -1,0 +1,21 @@
+@function opposite-side($side)
+{
+	$map: (
+		top:    bottom,
+		bottom: top,
+		left:   right,
+		right:  left
+		);
+	@return map-get($map, $side);
+}
+
+@function tangent($side)
+{
+	$map: (
+		top:    left,
+		bottom: left,
+		left:   top,
+		right:  top
+		);
+	@return map-get($map, $side);
+}

@@ -26,3 +26,12 @@ $positions: (static, relative, absolute, fixed);
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+$sides: (top, bottom, left, right);
+
+@each $side in $sides {
+	.#{$side} {
+		@extend .pos-absolute;
+		#{$side}: 0;
+	}
+}

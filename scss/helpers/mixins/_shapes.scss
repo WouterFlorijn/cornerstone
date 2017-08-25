@@ -1,0 +1,49 @@
+@mixin arrow($side, $size, $color, $border-size: 0, $border-color: transparent, $location: 50%)
+{
+	$opposite-side: opposite-side($side);
+	$tangent-side: tangent($side);
+
+	&::after, &::before {
+		position: absolute;
+		#{$opposite-side}: 100%;
+		#{$tangent-side}: 50%;
+		height: 0;
+		width: 0;
+
+		pointer-events: none;
+		border: solid transparent;
+		content: " ";
+	}
+	&::after {
+		border-#{$opposite-side}-color: $color;
+		border-width: $size;
+		margin-#{$tangent-side}: -$size;
+	}
+	&::before {
+		border-#{$opposite-side}-color: $border-color;
+		border-width: ($size + $border-size);
+		margin-#{$tangent-side}: -($size + $border-size);
+	}
+}
+
+@mixin pointer($side, $corner, $size, $color)
+{
+	$opposite-side: opposite-side($side);
+	$opposite-corner: opposite-side($corner);
+
+	&::after {
+		position: absolute;
+		#{$opposite-side}: 100%;
+		#{$corner}: 0;
+		height: 0;
+		width: 0;
+
+		pointer-events: none;
+		border: solid transparent;
+		content: " ";
+
+		border-#{$opposite-side}-color: $color;
+		border-#{$corner}-color: $color;
+		border-width: $size;
+	}
+}
