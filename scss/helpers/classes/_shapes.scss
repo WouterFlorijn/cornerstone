@@ -2,11 +2,9 @@
 	position: relative;
 	width: 100%;
 
-	&:after {
-		content: "";
-		display: block;
-		padding-bottom: 100%;
-	}
+	content: "";
+	display: block;
+	padding-bottom: 100%;
 }
 .square-content {
 	position: absolute;
