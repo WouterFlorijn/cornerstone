@@ -31,12 +31,20 @@ $space: () !default;
 }
 
 @each $name, $size in $space {
-	.spaced-#{$name} {
+	.spaced-h-#{$name} {
 		&:not(:first-of-type) {
 			margin-left: #{$size / 2};
 		}
 		&:not(:last-of-type) {
 			margin-right: #{$size / 2};
+		}
+	}
+	.spaced-v-#{$name} {
+		&:not(:first-of-type) {
+			margin-top: #{$size / 2};
+		}
+		&:not(:last-of-type) {
+			margin-bottom: #{$size / 2};
 		}
 	}
 }

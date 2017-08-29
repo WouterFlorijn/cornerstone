@@ -1,6 +1,6 @@
 {
   "name": "@wouterflorijn/cornerstone",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Standalone SASS helpers mostly designed to work with ZURB Foundation and Material Design.",
   "main": "js/index.js",
   "scripts": {
